@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class ejercicio3_8 {
+public class ejercicio8_3 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,12 +13,11 @@ public class ejercicio3_8 {
         double a = sc.nextDouble();
 
         System.out.println("dale un valor a B");
-        int b = sc.nextInt();
+        double b = sc.nextDouble();
 
         System.out.println("dale un valor a C");
         double c = sc.nextDouble();
 
-        System.out.println("");
 
         double x1 = (-b+Math.pow((b*b-4*a*c),(0.5)))/(2*a);
         double x2 = (-b-Math.pow((b*b-4*a*c),(0.5)))/(2*a);
