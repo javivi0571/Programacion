@@ -1,3 +1,5 @@
+package play;
+
 import java.util.Scanner;
 
 public class marco {
