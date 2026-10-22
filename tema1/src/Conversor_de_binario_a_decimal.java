@@ -11,6 +11,5 @@ public class Conversor_de_binario_a_decimal{
         }
         System.out.println(num%2);
         System.out.println("1");
-
     }
 }
