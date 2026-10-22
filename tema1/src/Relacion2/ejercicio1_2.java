@@ -1,3 +1,5 @@
+package Relacion2;
+
 public class ejercicio1_2 {
     static void main(String[] args) {
 
