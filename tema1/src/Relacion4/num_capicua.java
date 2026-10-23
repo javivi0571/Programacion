@@ -1,6 +1,8 @@
+package Relacion4;
+
 import java.util.Scanner;
 
-public class capicua {
+public class num_capicua {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("introduce un numero");
@@ -19,7 +21,7 @@ public class capicua {
         System.out.println(inv);
 
         if (aux==inv){
-            System.out.println("es caipicua");
+            System.out.println("es capicua");
         }
 
         else{
