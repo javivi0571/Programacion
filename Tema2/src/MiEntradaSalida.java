@@ -31,14 +31,12 @@ public class MiEntradaSalida {
         return numLeidoPoss;
     }
 
-
     public static double leerDouble(String mensaje) {
         Scanner sc = new Scanner(System.in);
         System.out.printf("%s: ", mensaje);
         double numLeido = Double.parseDouble(sc.nextLine());
         return numLeido;
     }
-
 
     public static int leerIntRang(String mensaje) {
         Scanner sc = new Scanner(System.in);
@@ -66,6 +64,36 @@ public class MiEntradaSalida {
 
         } while (numLeidoRang > y || numLeidoRang < x);
         return numLeidoRang;
+    }
+
+    public static int[] elementosComunesArrays(int[]array1, int[]array2){
+        int posiciones = 0;
+        int[] arrayRes = new int[array1.length];
+
+        for (int i = 0; i < array1.length; i++) {
+            for (int j = 0; j < array2.length; j++) {
+
+                if (array1[i] == array2[j]){
+                    arrayRes[posiciones] = array1[i];
+                    posiciones++;
+
+                }
+                for (int k = 0; k < arrayRes.length; k++) {
+                    for (int l = 0; l < arrayRes.length; l++) {
+
+                        if (k != l){
+
+                            if((arrayRes[k] != 0) && (arrayRes[k] == arrayRes[l])){
+                                arrayRes[l] = 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        return arrayRes;
     }
 
     //----------------------------------------------------------------------------------------------------------------
