@@ -1,5 +1,7 @@
+package Array1;
+
 public class EjeA_1_11{
-    /*public static int[] elementosComunesArray(int[]array1, int[]array2){
+    public static int[] elementosComunesArray(int[]array1, int[]array2){
         int posiciones = 0;
         int[] arrayRes = new int[array1.length];
 
@@ -27,13 +29,13 @@ public class EjeA_1_11{
         }
 
         return arrayRes;
-    }*/
+    }
 
     static void main(String[] args) {
         int[] array1 = {5,7,4,9,8};
         int[] array2 = {1,4,8,4,2};
         int[] prueba = new int [5];
-        prueba = MiEntradaSalida.elementosComunesArrays(array1,array2);
+        prueba = elementosComunesArray(array1,array2);
         for (int i = 0; i < prueba.length; i++) {
             System.out.println(prueba[i]);
         }

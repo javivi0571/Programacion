@@ -66,7 +66,7 @@ public class MiEntradaSalida {
         return numLeidoRang;
     }
 
-    public static int[] elementosComunesArrays(int[]array1, int[]array2){
+    public static int[] elementosComunesArray(int[]array1, int[]array2){
         int posiciones = 0;
         int[] arrayRes = new int[array1.length];
 

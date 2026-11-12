@@ -1,3 +1,5 @@
+package Array1;
+
 import java.util.Scanner;
 
 public class EjeA_1_2 {
