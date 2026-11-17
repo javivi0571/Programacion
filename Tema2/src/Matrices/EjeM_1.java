@@ -10,7 +10,6 @@ public class EjeM_1 {
                 if(matriz[i][j] < 0){
                     negativo = true;
                 }
-
             }
         }
 
@@ -19,8 +18,8 @@ public class EjeM_1 {
     }
 
     static void main(String[] args) {
-        int [][] mimatriz = {{4,6,7},{-7,8,5},{0,1,3}};
-        if(negativoEnMatriz(mimatriz)){
+        int [][] miMatriz = {{4,6,7},{-7,8,5},{0,1,3}};
+        if(negativoEnMatriz(miMatriz)){
             System.out.println("Si hay negativo");
         }
         else{

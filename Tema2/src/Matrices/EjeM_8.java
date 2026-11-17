@@ -10,7 +10,7 @@ public class EjeM_8 {
             filas = true;
         }
         for (int i = 0; i < matriz1.length; i++) {
-            if(matriz1[i].length != matriz2[i].length){
+            if (matriz1[i].length != matriz2[i].length) {
                 columnas = false;
             }
         }
@@ -19,7 +19,7 @@ public class EjeM_8 {
         }
         else{
 
-            System.out.println("No tienen la misma cantidad de filas y/o columnas, así que no los podré sumar.");
+            System.out.println("No tienen la misma cantidad de filas y/o columnas.");
         }
 
         return mismas;
@@ -27,8 +27,7 @@ public class EjeM_8 {
 
     public static int [][] sumaMatriz(int[][] matriz1,int [][]matriz2) {
 
-        int n = matriz1.length;
-        int [][] matrizResultado = new int [n][matriz1[n-1].length];
+        int [][] matrizResultado = new int [matriz1.length][matriz1[dondeColumnaMayor(matriz1)].length];
 
         for (int i = 0; i < matriz1.length; i++) {
             for (int j = 0; j < matriz1[i].length; j++) {
@@ -39,9 +38,29 @@ public class EjeM_8 {
         return matrizResultado;
     }
 
+    public static int dondeColumnaMayor(int[][] matriz){
+
+        int columnas = 0;
+        int columnasAnterior = 0;
+        int columnaMayor =0;
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                columnas++;
+            }
+            if (columnasAnterior < columnas){
+                columnaMayor = i;
+                columnasAnterior = columnas;
+            }
+            columnas = 0;
+        }
+
+        return columnaMayor;
+    }
+
     static void main(String[] args) {
-        int [][] matriz1 = {{4,6,7},{-7,8,5},{0,1,3}};
-        int [][] matriz2 = {{8,4,1},{2,5,3},{-8,9,0}};
+        int [][] matriz1 = {{4,6,7},{-7,8,5,5,4,4,8,5},{0,1,3}};
+        int [][] matriz2 = {{8,4,1},{2,5,3,2,6,4,67,2},{-8,9,0}};
         int [][] matrizRes;
 
         if(mismasFilasColumnas(matriz1,matriz2)) {

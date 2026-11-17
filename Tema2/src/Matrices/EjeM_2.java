@@ -16,7 +16,7 @@ public class EjeM_2 {
     }
 
     static void main(String[] args) {
-        int [][] mimatriz = {{4,6,7},{-7,8,5},{0,1,3}};
-        System.out.println(sumatorioMatriz(mimatriz));
+        int [][] miMatriz = {{4,6,7},{-7,8,5},{0,1,3}};
+        System.out.println(sumatorioMatriz(miMatriz));
     }
 }
