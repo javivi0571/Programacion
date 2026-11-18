@@ -2,16 +2,17 @@ package Matrices;
 
 public class EjeM_8 {
     public static boolean mismasFilasColumnas(int[][] matriz1,int[][] matriz2){
-        boolean filas = false;
+        boolean filas = true;
         boolean columnas = true;
         boolean mismas = false;
 
-        if(matriz1.length == matriz2.length){
-            filas = true;
+        if(matriz1.length != matriz2.length){
+            filas = false;
         }
         for (int i = 0; i < matriz1.length; i++) {
             if (matriz1[i].length != matriz2[i].length) {
                 columnas = false;
+                break;
             }
         }
         if(filas && columnas){

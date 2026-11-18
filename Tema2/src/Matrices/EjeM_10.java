@@ -7,9 +7,9 @@ public class EjeM_10 {
     }
 
     public static boolean matrizSimetrica(int[][] matriz) {
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[i].length/2; j++) {
-                if (matriz[i][j] != matriz[i][matriz[i].length-1-j]) {
+        for (int[] unaFila : matriz) {
+            for (int j = 0; j < unaFila.length / 2; j++) {
+                if (unaFila[j] != unaFila[unaFila.length - 1 - j]) {
                     return false;
                 }
             }
