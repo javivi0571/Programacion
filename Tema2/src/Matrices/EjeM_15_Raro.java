@@ -9,25 +9,24 @@ public class EjeM_15_Raro {
 
         System.out.println("Dime las dimensiones de la matriz");
         System.out.print("Filas:");
-        int f = sc.nextInt();
+        int filas = sc.nextInt();
         System.out.print("Columnas:");
-        int c = sc.nextInt();
+        int columnas = sc.nextInt();
 
-        int g;
-        int v;
+        int coordFila;
+        int coordColumna;
 
         System.out.println("Dime la posición");
         do{
             System.out.print("Introduce la fila:");
-            g = sc.nextInt();
-        }while (g < 0 || g >= f);
+            coordFila = sc.nextInt();
+        }while (coordFila < 0 || coordFila >= filas);
 
         do{
             System.out.print("Introduce la columna:");
-            v = sc.nextInt();
-        }while (v < 0 || v >= c);
+            coordColumna = sc.nextInt();
+        }while (coordColumna < 0 || coordColumna >= columnas);
 
-        System.out.println(g * (c + 1) + v + 1);
-
+        System.out.println(coordFila * (columnas + 1) + coordColumna + 1);
     }
 }
