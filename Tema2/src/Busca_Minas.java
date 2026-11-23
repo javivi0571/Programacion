@@ -44,9 +44,9 @@ public class Busca_Minas {
         char ancho = '0';
         char alto = 'A';
 
-        for (char i = alto; i < tablero.length; i++) {
-            for (char j = ancho; j < tablero[i].length; j++) {
-                coordenadas[i][j] = 'o';
+        for (int i = 0; i < tablero.length; i++) {
+            for (int j = 0; j < tablero[i].length; j++) {
+                coordenadas[i][j] = (char)(ancho+i);
                 System.out.print(coordenadas[i][j]);
             }
             System.out.println();
@@ -78,7 +78,7 @@ public class Busca_Minas {
                 else{
                     if (i == 0 && j== 0){
                         for (int k = i; k < i + 2; k++) {
-                            for (int l = j; l < j + 1; l++) {
+                            for (int l = j; l < j + 2; l++) {
 
                                 if (matriz[k][l] == 'X'){
                                     contador++;
