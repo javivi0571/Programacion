@@ -33,7 +33,7 @@ public class EjeM_FINAL_BOSS {
                 if (matriz[i][j] % 2 == 0){
                     if (i == 0 && j== 0){
                         for (int k = i; k < i + 2; k++) {
-                            for (int l = j; l < j + 1; l++) {
+                            for (int l = j; l < j + 2; l++) {
 
                                 if (matriz[k][l] % 2 == 0){
                                     contador++;
@@ -152,7 +152,7 @@ public class EjeM_FINAL_BOSS {
                 else{
                     if (i == 0 && j== 0){
                         for (int k = i; k < i + 2; k++) {
-                            for (int l = j; l < j + 1; l++) {
+                            for (int l = j; l < j + 2; l++) {
 
                                 if (matriz[k][l] % 2 == 0){
                                     contador++;
